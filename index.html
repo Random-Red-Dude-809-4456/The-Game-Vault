@@ -44,7 +44,7 @@
 <body>
 
     <h1 id="pageTitle">The Henny Vault</h1>
-    <p class="subtitle" id="subInfo">20 Games Available | 
+    <p class="subtitle" id="subInfo">24 Games Available | 
         <span id="viewBtn" style="color: #38bdf8; cursor: pointer; text-decoration: underline;" onclick="switchPage('favorites')">View Favorites</span> | 
         <span style="color: #38bdf8; cursor: pointer; text-decoration: underline;" onclick="switchPage('changelog')">Changelog</span>
     </p>
@@ -72,10 +72,14 @@
             <div class="game-card" data-id="portal"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Portal_standalonebox.jpg/250px-Portal_standalonebox.jpg" alt="Portal"><h2>Portal</h2><span class="game-meta">Category: Puzzle, Platformer</span><a href="https://yikes.pw/portal" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'portal')">★</span></div>
             <div class="game-card" data-id="plague"><img src="https://www.cubed3.com/wp-content/uploads/2025/02/plague-inc-evolved-pc-art-banner.jpg" alt="Plague Inc"><h2>Plague Inc</h2><span class="game-meta">Category: Strategy, Simulation</span><a href="https://stg420.github.io/plagueinc/" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'plague')">★</span></div>
             <div class="game-card" data-id="mc188"><img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" alt="Minecraft 1.8.8"><h2>Minecraft 1.8.8</h2><span class="game-meta">Category: Sandbox, Adventure</span><a href="https://stg420.github.io/mc/mc" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'mc188')">★</span></div>
-            <div class="game-card" data-id="pvz"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/PlantsvsZombiesCoverArt.jpg/250px-PlantsvsZombiesCoverArt.jpg" alt="Plants vs. Zombies"><h2>Plants vs. Zombies</h2><span class="game-meta">Category: Strategy, Tower Defense</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/pvz" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'pvz')">★</span></div>
-            <div class="game-card" data-id="granny"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGuwPm1hTrkGGet0chLURkB8HKxaOWiplxX0G0jbzDQkZRLChsJwHeQcze&s=10" alt="Granny"><h2>Granny</h2><span class="game-meta">Category: Horror, Escape</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/granny/" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'granny')">★</span></div>
-            <div class="game-card" data-id="granny2"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205040/header.jpg" alt="Granny 2"><h2>Granny 2</h2><span class="game-meta">Category: Horror, Escape</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/granny2/" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'granny2')">★</span></div>
-            <div class="game-card" data-id="jsab"><img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Just_Shapes_%26_Beats.jpg" alt="Just Shapes And Beats"><h2>Just Shapes And Beats</h2><span class="game-meta">Category: Rhythm, Action</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/jsab" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'jsab')">★</span></div>
+            <div class="game-card" data-id="pvz"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/PlantsvsZombiesCoverArt.jpg/250px-PlantsvsZombiesCoverArt.jpg" alt="Plants vs. Zombies"><h2>Plants vs. Zombies</h2><span class="game-meta">Category: Strategy, Tower Defense</span><a href="https://stg420.github.io/pvz" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'pvz')">★</span></div>
+            <div class="game-card" data-id="granny"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGuwPm1hTrkGGet0chLURkB8HKxaOWiplxX0G0jbzDQkZRLChsJwHeQcze&s=10" alt="Granny"><h2>Granny</h2><span class="game-meta">Category: Horror, Escape</span><a href="https://stg420.github.io/granny/" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'granny')">★</span></div>
+            <div class="game-card" data-id="granny2"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205040/header.jpg" alt="Granny 2"><h2>Granny 2</h2><span class="game-meta">Category: Horror, Escape</span><a href="https://stg420.github.io/granny2/" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'granny2')">★</span></div>
+            <div class="game-card" data-id="jsab"><img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Just_Shapes_%26_Beats.jpg" alt="Just Shapes And Beats"><h2>Just Shapes And Beats</h2><span class="game-meta">Category: Rhythm, Action</span><a href="https://stg420.github.io/jsab" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'jsab')">★</span></div>
+            <div class="game-card" data-id="blockblast"><img src="https://stg420.github.io/blockblast/image.png" alt="Block Blast"><h2>Block Blast</h2><span class="game-meta">Category: Puzzle, Arcade</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/blockblast" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'blockblast')">★</span></div>
+            <div class="game-card" data-id="amongus"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg" alt="Among Us"><h2>Among Us</h2><span class="game-meta">Category: Multiplayer, Social</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/amongus" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'amongus')">★</span></div>
+            <div class="game-card" data-id="subway"><img src="https://stg420.github.io/subway/subway.jpg" alt="Subway Surfers"><h2>Subway Surfers</h2><span class="game-meta">Category: Runner, Arcade</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/subway" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'subway')">★</span></div>
+            <div class="game-card" data-id="gd"><img src="https://stg420.github.io/gd/wd_branding/thumbnail/thumbnail_1024.png" alt="Geometry Dash"><h2>Geometry Dash</h2><span class="game-meta">Category: Rhythm, Platformer</span><span class="recent-tag">Recently Added</span><a href="https://stg420.github.io/gd" class="play-btn">Play</a><span class="star-icon" onclick="toggleFavorite(this, 'gd')">★</span></div>
             
             <!-- Secret Card -->
             <div class="game-card" id="fnae-secret-card" data-id="fnae" style="display: none; border-color: #f59e0b;">
@@ -89,6 +93,10 @@
         <div id="changelog">
             <h2>Site Changelog</h2>
             <ul>
+                <li><strong>Game Addition:</strong> Added Geometry Dash.</li>
+                <li><strong>Game Addition:</strong> Added Subway Surfers.</li>
+                <li><strong>Game Addition:</strong> Added Among Us.</li>
+                <li><strong>Game Addition:</strong> Added Block Blast.</li>
                 <li><strong>Update:</strong> Added professional "No results found" messaging.</li>
                 <li><strong>Update:</strong> Implemented global fade-in animations for all UI transitions.</li>
                 <li><strong>Update:</strong> Implemented exact prefix searching for game titles.</li>
