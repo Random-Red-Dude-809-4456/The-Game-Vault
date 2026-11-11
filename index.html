@@ -8,6 +8,16 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; text-align: center; padding: 50px 20px; margin: 0; }
         h1 { color: #38bdf8; font-size: 2.5rem; margin-bottom: 10px; }
         .subtitle { font-size: 1.5rem; color: #94a3b8; margin-bottom: 40px; }
+
+        /* Random text next to the title */
+        #randomTag {
+            font-size: 1.1rem;
+            color: #fbbf24;
+            margin-left: 14px;
+            font-weight: 600;
+            vertical-align: middle;
+            transition: opacity 0.4s ease;
+        }
         
         #searchContainer { margin-bottom: 30px; display: flex; justify-content: center; gap: 10px; }
         .control-btn { padding: 10px 20px; border-radius: 20px; border: none; background-color: #38bdf8; color: #0f172a; font-weight: bold; cursor: pointer; transition: transform 0.2s; }
@@ -201,7 +211,7 @@
     <button class="big-enter-btn" id="enterVaultBtn" onclick="enterTheVault()">Enter The Gaming Vault</button>
 </div>
 
-    <h1 id="pageTitle">The Gaming Vault</h1>
+    <h1><span id="pageTitle">The Gaming Vault</span><span id="randomTag"></span></h1>
     <div class="creator-subtag">
         ⭐ Site Upgraded by <span style="color: #f8fafc; text-decoration: underline;">bananaman122876543</span> ⭐
     </div>
@@ -477,6 +487,39 @@
             }, 600);
         }
 
+        // Random text next to the title
+        const randomPhrases = [
+            "The IT better not block this.",
+            "don't tell the teacher",
+            "one more game...",
+            "certified boredom cure",
+            "you found the vault",
+            "press play already",
+            "new games daily-ish",
+            "totally educational",
+            "If you read this you goon to femboys",
+            "Say Wallahi Bro",
+            "Better than GN-MATH and Truffled.",
+            "Adding games is fun af",
+            "Updated games so they work at most schools.",
+            "Idk",
+            "Chicken Nugget Timeee"
+        ];
+
+        function setRandomTag() {
+            let tag = document.getElementById('randomTag');
+            tag.style.opacity = 0;
+            setTimeout(() => {
+                tag.textContent = randomPhrases[Math.floor(Math.random() * randomPhrases.length)];
+                tag.style.opacity = 1;
+            }, 400);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setRandomTag();
+            setInterval(setRandomTag, 4000);
+        });
+
         function startOpeningAnimation() {
             let overlay = document.getElementById('introOverlay');
             overlay.style.display = 'flex';
@@ -514,9 +557,4 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
 
